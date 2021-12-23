@@ -20,7 +20,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///C:/Users/solicode/Documents/GitHub/calculatrice-javaScript/prototype/index.html",
+            "url": "http://127.0.0.1:5500/live%20coding/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
