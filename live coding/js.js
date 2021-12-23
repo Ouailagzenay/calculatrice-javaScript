@@ -3,6 +3,7 @@ var bString ;
 var a ;
 var b;
 var operation;
+var totale
 
 
 
@@ -26,13 +27,39 @@ function onOperationClick(ParaOperation){
 function affiche(number){
     let affiche = document.getElementById("affiche");
     affiche.value = "";
-    if(aString != undefined){
-        affiche.value += aString;
+    if(a != undefined && b != undefined && operation != undefined){
+        affiche.value = number
     }
-    if (operation != undefined){
-        affiche.value += operation
-    }
-    if (bString != undefined){
-        affiche.value += bString
+    else{
+        if(aString != undefined){
+            affiche.value += aString;
+        }
+        if (operation != undefined){
+            affiche.value += operation
+        }
+        if (bString != undefined){
+            affiche.value += bString
+        }
     }
 }
+function equal(){
+    
+    b = parseFloat(bString);
+    totale = some(a , b ,operation)
+    affiche(totale)
+}
+function some (a ,b , operation){
+    let total = undefined
+    switch(operation){
+        case '+' :
+            total = a + b
+            break;
+        case '-' :
+            total = a - b
+            break;
+        default :
+        break ;
+    }
+    return total
+}
+
