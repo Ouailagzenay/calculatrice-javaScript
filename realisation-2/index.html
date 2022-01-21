@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype calculatrice</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="CalculatriceBLO.js"></script>
+    <script src="calculatrice.js"></script>
+</head>
+<body class="box">
+    <div class="display"><input type="text" id="afficheur"></div>
+    <div class="buttons">
+    <div class="row">
+        <button type="button" onclick="ClickNumber(9)">9</button>
+        <button type="button" onclick="ClickNumber(8)">8</button>
+        <button type="button" onclick="ClickNumber(7)">7</button>
+        <button type="button" id="plus" onclick="Operation('+')">+</button>
+    </div>
+    <div class="row">
+    <button type="button" onclick="ClickNumber(6)">6</button>
+    <button type="button" onclick="ClickNumber(5)">5</button>
+    <button type="button" onclick="ClickNumber(4)">4</button>
+    <button type="button" id="moins" onclick="Operation('-')">-</button>
+    </div>
+    
+    <div class="row">
+        <button type="button" onclick="ClickNumber(3)">3</button>
+        <button type="button" onclick="ClickNumber(2)">2</button>
+        <button type="button" onclick="ClickNumber(1)">1</button>
+        <button type="button" id="de" onclick="Operation('*')">x</button>
+    </div>
+
+    <div class="row">
+        <button type="button" onclick="ClickNumber(0)">0</button>
+        <button type="button" onclick="Operation('/')">/</button>
+        <button type="button" onclick="Init()">C</button>
+        <button type="button" class="red" onclick="Egale()">=</button>
+        
+    </div>
+
+</div>
+    
+</body>
+</html>
